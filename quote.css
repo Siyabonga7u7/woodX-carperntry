@@ -1,0 +1,384 @@
+
+/* ===== WOODX QUOTE PAGE ===== */
+
+.quote-page {
+    background: #f7f4ed;
+    color: #24251f;
+    min-height: 100vh;
+}
+
+.quote-header {
+    background: #20221c;
+    padding: 22px max(24px, calc((100% - 1152px) / 2));
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.quote-back-link {
+    color: #f7f4ed;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.quote-back-link:hover {
+    color: #d6ad72;
+}
+
+.quote-hero {
+    background: #20221c;
+    color: #f7f4ed;
+    padding: 65px 24px 85px;
+    text-align: center;
+}
+
+.quote-hero .eyebrow {
+    margin-bottom: 20px;
+}
+
+.quote-hero h1 {
+    font-size: clamp(40px, 6vw, 68px);
+    line-height: 1.1;
+    letter-spacing: -2px;
+    margin-bottom: 22px;
+}
+
+.quote-hero h1 span {
+    color: #d6ad72;
+}
+
+.quote-hero > p:last-child {
+    max-width: 600px;
+    margin: auto;
+    color: #d0d0c9;
+    font-size: 15px;
+    line-height: 1.9;
+}
+
+.quote-layout {
+    max-width: 1152px;
+    margin: -30px auto 0;
+    padding: 0 24px;
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    align-items: start;
+    gap: 28px;
+    position: relative;
+}
+
+.quote-form-card,
+.quote-message-card,
+.quote-workshop-card {
+    background: #ffffff;
+    border: 1px solid #e9e4da;
+    padding: 30px;
+    box-shadow: 0 12px 35px rgba(35, 30, 20, 0.04);
+}
+
+.quote-section-heading {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.quote-step {
+    color: #a8793e;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    padding-top: 4px;
+}
+
+.quote-section-heading h2,
+.quote-workshop-card h2 {
+    color: #24251f;
+    font-size: 24px;
+    line-height: 1.3;
+    margin-bottom: 8px;
+}
+
+.quote-section-heading p {
+    color: #77776e;
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+.quote-field {
+    margin-bottom: 23px;
+}
+
+.quote-field > label,
+.quote-dimensions > div > label {
+    display: block;
+    color: #38382f;
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: 9px;
+}
+
+.quote-field > label span {
+    color: #858176;
+    font-weight: normal;
+}
+
+.quote-field input,
+.quote-field select,
+.quote-field textarea,
+#generatedMessage {
+    display: block;
+    width: 100%;
+    border: 1px solid #ded9cf;
+    border-radius: 3px;
+    padding: 14px;
+    background: #fdfcf9;
+    color: #24251f;
+    font: inherit;
+    font-size: 13px;
+    outline: none;
+}
+
+.quote-field input:focus,
+.quote-field select:focus,
+.quote-field textarea:focus,
+#generatedMessage:focus {
+    border-color: #a8793e;
+    box-shadow: 0 0 0 3px rgba(168, 121, 62, 0.1);
+}
+
+.quote-field textarea,
+#generatedMessage {
+    resize: vertical;
+    line-height: 1.8;
+}
+
+.quote-dimensions {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 12px;
+}
+
+.quote-dimensions input {
+    min-width: 0;
+}
+
+.quote-hint {
+    color: #858176;
+    font-size: 11px;
+    line-height: 1.7;
+    margin-top: 10px;
+}
+
+.quote-primary-button,
+.quote-secondary-button,
+.quote-whatsapp-button {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 15px 18px;
+    border: none;
+    border-radius: 3px;
+    text-decoration: none;
+    text-align: center;
+    font: inherit;
+    font-size: 13px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.25s ease, color 0.25s ease;
+}
+
+.quote-primary-button {
+    background: #25271f;
+    color: #ffffff;
+}
+
+.quote-primary-button:hover {
+    background: #a8793e;
+}
+
+.quote-contact-column {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+#generatedMessage {
+    min-height: 250px;
+    margin-bottom: 12px;
+    overflow-wrap: anywhere;
+}
+
+.quote-status {
+    color: #77776e;
+    font-size: 12px;
+    line-height: 1.7;
+    margin-bottom: 14px;
+}
+
+.quote-secondary-button {
+    background: #eee9df;
+    color: #24251f;
+    margin-bottom: 12px;
+}
+
+.quote-secondary-button:hover:not(:disabled) {
+    background: #ded5c6;
+}
+
+.quote-secondary-button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.quote-whatsapp-button {
+    background: #218c51;
+    color: #ffffff;
+}
+
+.quote-whatsapp-button:hover {
+    background: #176b3c;
+}
+
+.quote-whatsapp-button.disabled {
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+.quote-workshop-card {
+    background: #20221c;
+    color: #f7f4ed;
+}
+
+.quote-workshop-card .eyebrow {
+    margin-bottom: 15px;
+}
+
+.quote-workshop-card h2 {
+    color: #f7f4ed;
+}
+
+.quote-workshop-card > p:not(.eyebrow) {
+    color: #c5c5bb;
+    font-size: 13px;
+    line-height: 1.9;
+    margin-bottom: 20px;
+}
+
+.quote-phone {
+    display: block;
+    color: #f7f4ed;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    margin: 16px 0;
+}
+
+.quote-phone:hover,
+.quote-contact-link:hover {
+    color: #d6ad72;
+}
+
+.quote-contact-link {
+    display: inline-block;
+    color: #d6ad72;
+    font-size: 13px;
+    font-weight: bold;
+    text-decoration: none;
+    margin-top: 8px;
+}
+
+.quote-workshop-card .quote-location {
+    border-top: 1px solid #414239;
+    padding-top: 18px;
+    margin-top: 22px;
+    margin-bottom: 0;
+}
+
+.quote-note {
+    max-width: 1104px;
+    margin: 35px auto 70px;
+    padding: 0 24px;
+}
+
+.quote-note p {
+    background: #eee9df;
+    color: #6f6b61;
+    padding: 18px 20px;
+    font-size: 12px;
+    line-height: 1.8;
+}
+
+.quote-footer {
+    background: #171913;
+    color: #c1c1b8;
+    padding: 35px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.quote-footer p,
+.quote-footer > a:last-child {
+    font-size: 12px;
+    line-height: 1.8;
+}
+
+.quote-footer > a:last-child {
+    color: #d6ad72;
+    text-decoration: none;
+}
+
+@media (max-width: 850px) {
+    .quote-layout {
+        grid-template-columns: 1fr;
+        max-width: 680px;
+    }
+
+    .quote-hero {
+        padding-bottom: 75px;
+    }
+}
+
+@media (max-width: 600px) {
+    .quote-header {
+        padding: 18px 20px;
+    }
+
+    .quote-hero {
+        padding: 55px 20px 70px;
+    }
+
+    .quote-hero h1 {
+        letter-spacing: -1px;
+    }
+
+    .quote-layout {
+        padding: 0 14px;
+        gap: 18px;
+    }
+
+    .quote-form-card,
+    .quote-message-card,
+    .quote-workshop-card {
+        padding: 22px 18px;
+    }
+
+    .quote-dimensions {
+        gap: 8px;
+    }
+
+    .quote-dimensions input {
+        padding: 12px 8px;
+        font-size: 12px;
+    }
+
+    .quote-footer {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+}
