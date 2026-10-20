@@ -921,4 +921,14 @@ footer[id] {
         padding: 13px 16px;
     }
 }
-
+/* Fix WoodX mobile hamburger menu */
+@media (max-width: 768px) {
+  .nav-links,
+  .nav-links.active,
+  .nav-links.show {
+    background-color: #101820;
+    opacity: 1;
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+  }
+}
